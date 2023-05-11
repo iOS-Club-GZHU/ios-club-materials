@@ -18,24 +18,3 @@ constructs like objects, protocols, closures, and generics. Swift embraces
 modules, eliminating the need for headers and the code duplication they entail.
 
 To learn more about the programming language, visit [swift.org](https://swift.org/documentation/).
-
-- [Contributing to Swift](#contributing-to-swift)
-- [Getting Started](#getting-started)
-  - [Swift Toolchains](#swift-toolchains)
-  - [Build Failures](#build-failures)
-- [Learning More](#learning-more)
-
-## Getting Started
-
-If you are interested in:
-- Contributing fixes and features to the compiler: See our
-  [How to Submit Your First Pull Request guide](/docs/HowToGuides/FirstPullRequest.md).
-- Building the compiler as a one-off: See our [Getting Started guide][].
-- Building a toolchain as a one-off: Follow the [Getting Started guide][]
-  up until the "Building the project" section. After that, follow the
-  instructions in the [Swift Toolchains](#swift-toolchains) section below.
-
-We also have an [FAQ](/docs/HowToGuides/FAQ.md) that answers common questions.
-
-[Getting Started guide]: /docs/HowToGuides/GettingStarted.md
-
