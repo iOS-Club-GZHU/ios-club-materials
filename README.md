@@ -5,6 +5,8 @@
 
 # Swift Programming Language
 
+(You can find whatever you need in the above contents, feel free to use and download what you need.)
+
 ## Welcome to Swift
 
 Swift is a high-performance system programming language.  It has a clean
