@@ -1,114 +1,159 @@
-# ios-learning-materials [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://www.swift.org/assets/images/swift~dark.svg">
+  <img src="https://www.swift.org/assets/images/swift.svg" alt="Swift logo" height="70">
+</picture>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/jvirus/ios-learning-materials?label=Last%20Commit)
-[![Language](https://img.shields.io/badge/Language-Swift-green.svg)]()
-[![Founded](https://img.shields.io/badge/Founded-August_2017-ff69b4.svg)]()
-[![Materials](https://img.shields.io/badge/Materials-2183-important.svg)]()
-[![MajorTopics](https://img.shields.io/badge/Major_Topics-82-red.svg)]()
-[![NLOC](https://img.shields.io/tokei/lines/github/jvirus/ios-learning-materials)]()
-[![Contributors](https://img.shields.io/github/contributors/jvirus/ios-learning-materials)]()
-[![Repo Size](https://img.shields.io/github/repo-size/jvirus/ios-learning-materials)]()
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
+# Swift Programming Language
 
-![](logo-alternative.jpg)
 
-### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
+| | **Architecture** | **Build** |
+|---|:---:|:---:|
+| **macOS**        | x86_64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-macos/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-macos)|
+| **Ubuntu 18.04** | x86_64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-ubuntu-18_04/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-ubuntu-18_04)|
+| **Ubuntu 20.04** | x86_64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-ubuntu-20_04/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-ubuntu-20_04)|
+| **Ubuntu 20.04** | AArch64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-ubuntu-20_04-aarch64/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-ubuntu-20_04-aarch64)|
+| **Ubuntu 22.04** | x86_64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-ubuntu-22_04/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-ubuntu-22_04)|
+| **Ubuntu 22.04** | AArch64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-ubuntu-22_04-aarch64/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-ubuntu-22_04-aarch64)|
+| **CentOS 7** | x86_64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-centos-7/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-centos-7)|
+| **Amazon Linux 2** | x86_64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-amazon-linux-2/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-amazon-linux-2)|
+| **Amazon Linux 2** | AArch64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-amazon-linux-2-aarch64/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-amazon-linux-2-aarch64)|
+| **Universal Base Image 9** | x86_64 |[![Build Status](https://ci.swift.org/job/oss-swift-package-ubi-9/lastCompletedBuild/badge/icon)](https://ci.swift.org/job/oss-swift-package-ubi-9)|
 
-# ✍️ About
+**Swift Community-Hosted CI Platforms**
 
-Curated list of articles, web-resources, tutorials, `Stack Overflow` and `Quora` Q&A, `GitHub`code repositories and useful resources that may help you dig a little bit deeper into iOS. All the resources are split into sub-categories which simlifies navigation and management. Feel free to use and suggest something to learn (iOS related of course 😜).
+| **OS** | **Architecture** | **Build** |
+|---|:---:|:---:|
+|**[Ubuntu 20.04](https://github.com/apple/swift-community-hosted-continuous-integration/blob/main/nodes/wasm32_ubuntu_20.04.json)** | wasm32 |[![Build Status](https://ci-external.swift.org/job/oss-swift-RA-linux-ubuntu-20.04-webassembly/lastCompletedBuild/badge/icon)](https://ci-external.swift.org/job/oss-swift-RA-linux-ubuntu-20.04-webassembly)|
+|**[Android](https://github.com/apple/swift-community-hosted-continuous-integration/blob/main/nodes/x86_64_ubuntu_16_04_LTS_android.json)** | ARMv7 |[![Build Status](https://ci-external.swift.org/job/oss-swift-RA-linux-ubuntu-16.04-android/lastCompletedBuild/badge/icon)](https://ci-external.swift.org/job/oss-swift-RA-linux-ubuntu-16.04-android)|
+|**[Android](https://github.com/apple/swift-community-hosted-continuous-integration/blob/main/nodes/x86_64_ubuntu_16_04_LTS_android.json)** | AArch64 |[![Build Status](https://ci-external.swift.org/job/oss-swift-RA-linux-ubuntu-16.04-android-arm64/lastCompletedBuild/badge/icon)](https://ci-external.swift.org/job/oss-swift-RA-linux-ubuntu-16.04-android-arm64)|
+|**[Windows 2019 (VS 2019)](https://github.com/apple/swift-community-hosted-continuous-integration/blob/main/nodes/x86_64_windows_2019_VS2019.json)** | x86_64 | [![Build Status](https://ci-external.swift.org/job/oss-swift-windows-x86_64-vs2019/lastCompletedBuild/badge/icon)](https://ci-external.swift.org/job/oss-swift-windows-x86_64-vs2019)|
 
-You may see some non-directly related topics such as `Computer Graphics`, `Machine Learning` or `Design Patterns` - these are actually related, in some ways, to `iOS` development, but in a much broader and more specific way. With the addition of new materials, the structure of the document will be properly maintained meaning that it will become a reference book for learning. Happy evolving 🤓:octocat:
+## Welcome to Swift
 
-# 📝 Content
+Swift is a high-performance system programming language.  It has a clean
+and modern syntax, offers seamless access to existing C and Objective-C code
+and frameworks, and is memory-safe by default.
 
-- [About](#about)
-- [Amazing Materials](Lists/AmazingMaterials.md)
-- [SwiftUI](Lists/SwiftUI.md)
-- [DocC](Lists/DocC.md)
-- [ARKit](Lists/ARKit.md)
-- [SceneKit](Lists/SceneKit.md)
-- [SpriteKit](Lists/SpriteKit.md)
-- [GameplayKit](Lists/GameplayKit.md)
-- [ReplayKit](Lists/ReplayKit.md)
-- [MapKit](Lists/MapKit.md)
-- [UIKit](Lists/UIKit.md)
-- [PhotoKit](Lists/PhotoKit.md)
-- [HealthKit](Lists/HealthKit.md)
-- [CloudKit](Lists/CloudKit.md)
-- [TextKit](Lists/TextKit.md)
-- [StoreKit](Lists/StoreKit.md)
-- [SiriKit](Lists/SiriKit.md)
-- [CallKit](Lists/CallKit.md)
-- [PushKit](Lists/PushKit.md)
-- [MetricKit](Lists/MetricKit.md)
-- [CoreML](Lists/CoreML.md)
-- [CreateML](Lists/CreateML.md)
-- [Core Animation](Lists/CoreAnimation.md)
-- [Core Graphics](Lists/CoreGraphics.md)
-- [Core Image](Lists/CoreImage.md)
-- [Core Location](Lists/CoreLocation.md)
-- [Core Data](Lists/CoreData.md)
-- [Core Motion](Lists/CoreMotion.md)
-- [CoreNFC](Lists/CoreNFC.md)
-- [Combine](Lists/Combine.md)
-- [Metal](Lists/Metal.md)
-- [Vision](Lists/Vision.md)
-- [AVFoundation](Lists/AVFoundation.md)
-- [AppKit](Lists/AppKit.md)
-- [SearchKit](Lists/SearchKit.md)
-- [Auto Layout](Lists/AutoLayout.md)
-- [AuthenticationServices](Lists/AuthenticationServices.md)
-- [Project Catalyst](Lists/ProjectCatalyst.md)
-- [Asset Catalog](Lists/AssetCatalog.md)
-- [Playgrounds](Lists/Playgrounds.md)
-- [In-App Purchase](Lists/InAppPurchase.md)
-- [Auto Fill](Lists/AutoFill.md)
-- [NLP](Lists/NLP.md)
-- [Foundation](Lists/Foundation.md)
-- [Swift](Lists/Swift.md)
-- [Swift Package Manager](Lists/SwiftPackageManager.md)
-- [Xcode](Lists/Xcode.md)
-- [Internationalization & Localization](Lists/InternationalizationAndLocalization.md)
-- [Security](Lists/Security.md)
-- [Payments](Lists/Payments.md)
-- [Document Based Apps](Lists/DocumentBasedApps.md)
-- [Networking](Lists/Networking.md)
-- [Frameworks Development](Lists/FrameworksDevelopment.md)
-- [Debugging](Lists/Debugging.md)
-- [Testing](Lists/Testing.md)
-- [App Submission](Lists/AppSubmission.md)
-- [App Extensions](Lists/AppExtensions.md)
-- [WWDC](Lists/WWDC.md)
-- [Git](Lists/Git.md)
-- [Development](Lists/Development.md)
-- [Algorithms and Data Structures](Lists/AlgorithmsAndDataStructures.md)
-- [Asynchronous Programming](Lists/AsynchronousProgramming.md)
-- [Functional Programming](Lists/FunctionalProgramming.md)
-- [Protocol-Oriented Programming](Lists/ProtocolOrientedProgramming.md)
-- [Architecture And Design Patterns](Lists/ArchitectureAndDesignPatterns.md)
-- [Clean Code](Lists/CleanCode.md)
-- [Continuous Integration (CI)](Lists/ContinuousIntegration.md)
-- [Computer Graphics](Lists/ComputerGraphics.md)
-- [Machine Learning](Lists/MachineLearning.md)
-- [App Distribution](Lists/AppDistribution.md)
-- [Dependency Management](Lists/DependencyManagement.md)
-- [Physics Engines](Lists/PhysicsEngines.md)
-- [Frameworks, Libraries, Platforms](Lists/FrameworksLibrariesPlatforms.md)
-- [SwiftSyntax](Lists/SwiftSyntax.md)
-- [Design](Lists/Design.md)
-- [UX](Lists/UX.md)
-- [Accessibility](Lists/Accessibility.md)
-- [Interview](Lists/Interview.md)
-- [Business](Lists/Business.md)
-- [Project Management](Lists/ProjectManagement.md)
-- [Product](Lists/Product.md)
+Although inspired by Objective-C and many other languages, Swift is not itself a
+C-derived language. As a complete and independent language, Swift packages core
+features like flow control, data structures, and functions, with high-level
+constructs like objects, protocols, closures, and generics. Swift embraces
+modules, eliminating the need for headers and the code duplication they entail.
 
-# ⚠️ Disclamer
-**Please** note that some materials may not provide ***the best possible or the most optimal*** recommendations, solutions or source codes. Try to be open minded and take everything as a `step` in the `learning process`. If you encounter something to improve in the materials, **please** write your suggestions to the respected authors. 
+To learn more about the programming language, visit [swift.org](https://swift.org/documentation/).
 
-# 👨‍💻 Author
-[Astemir Eleev](https://github.com/jVirus)
+- [Contributing to Swift](#contributing-to-swift)
+- [Getting Started](#getting-started)
+  - [Swift Toolchains](#swift-toolchains)
+  - [Build Failures](#build-failures)
+- [Learning More](#learning-more)
 
-# 🔖 Licence
-The project is availabe under [MIT Licence](https://github.com/jVirus/ios-learning-materials/blob/master/LICENSE)
+## Contributing to Swift
+
+Contributions to Swift are welcomed and encouraged! Please see the
+[Contributing to Swift guide](https://swift.org/contributing/).
+
+To be a truly great community, [Swift.org](https://swift.org/) needs to welcome
+developers from all walks of life, with different backgrounds, and with a wide
+range of experience. A diverse and friendly community will have more great
+ideas, more unique perspectives, and produce more great code. We will work
+diligently to make the Swift community welcoming to everyone.
+
+To give clarity of what is expected of our members, Swift has adopted the
+code of conduct defined by the Contributor Covenant. This document is used
+across many open source communities, and we think it articulates our values
+well. For more, see the [Code of Conduct](https://swift.org/code-of-conduct/).
+
+## Getting Started
+
+If you are interested in:
+- Contributing fixes and features to the compiler: See our
+  [How to Submit Your First Pull Request guide](/docs/HowToGuides/FirstPullRequest.md).
+- Building the compiler as a one-off: See our [Getting Started guide][].
+- Building a toolchain as a one-off: Follow the [Getting Started guide][]
+  up until the "Building the project" section. After that, follow the
+  instructions in the [Swift Toolchains](#swift-toolchains) section below.
+
+We also have an [FAQ](/docs/HowToGuides/FAQ.md) that answers common questions.
+
+[Getting Started guide]: /docs/HowToGuides/GettingStarted.md
+
+### Swift Toolchains
+
+#### Building
+
+Swift toolchains are created using the script
+[build-toolchain](https://github.com/apple/swift/blob/main/utils/build-toolchain). This
+script is used by swift.org's CI to produce snapshots and can allow for one to
+locally reproduce such builds for development or distribution purposes. A typical 
+invocation looks like the following:
+
+```
+  $ ./swift/utils/build-toolchain $BUNDLE_PREFIX
+```
+
+where ``$BUNDLE_PREFIX`` is a string that will be prepended to the build 
+date to give the bundle identifier of the toolchain's ``Info.plist``. For 
+instance, if ``$BUNDLE_PREFIX`` was ``com.example``, the toolchain 
+produced will have the bundle identifier ``com.example.YYYYMMDD``. It 
+will be created in the directory you run the script with a filename 
+of the form: ``swift-LOCAL-YYYY-MM-DD-a-osx.tar.gz``.
+
+Beyond building the toolchain, ``build-toolchain`` also supports the 
+following (non-exhaustive) set of useful options:
+
+- ``--dry-run``: Perform a dry run build. This is off by default.
+- ``--test``: Test the toolchain after it has been compiled. This is off by default.
+- ``--distcc``: Use distcc to speed up the build by distributing the C++ part of
+  the swift build. This is off by default.
+- ``--sccache``: Use sccache to speed up subsequent builds of the compiler by
+  caching more C++ build artifacts. This is off by default.
+
+More options may be added over time. Please pass ``--help`` to
+``build-toolchain`` to see the full set of options.
+
+#### Installing into Xcode
+
+On macOS if one wants to install such a toolchain into Xcode:
+
+1. Untar and copy the toolchain to one of `/Library/Developer/Toolchains/` or
+   `~/Library/Developer/Toolchains/`. E.g.:
+
+```
+  $ sudo tar -xzf swift-LOCAL-YYYY-MM-DD-a-osx.tar.gz -C /
+  $ tar -xzf swift-LOCAL-YYYY-MM-DD-a-osx.tar.gz -C ~/
+```
+
+The script also generates an archive containing debug symbols which
+can be installed over the main archive allowing symbolication of any
+compiler crashes.
+
+```
+  $ sudo tar -xzf swift-LOCAL-YYYY-MM-DD-a-osx-symbols.tar.gz -C /
+  $ tar -xzf swift-LOCAL-YYYY-MM-DD-a-osx-symbols.tar.gz -C ~/
+```
+
+2. Specify the local toolchain for Xcode's use via `Xcode->Toolchains`.
+
+### Build Failures
+
+Try the suggestions in
+[Troubleshooting build issues](/docs/HowToGuides/GettingStarted.md#troubleshooting-build-issues).
+
+Make sure you are using the
+[correct release](/docs/HowToGuides/GettingStarted.md#installing-dependencies)
+of Xcode.
+
+If you have changed Xcode versions but still encounter errors that appear to
+be related to the Xcode version, try passing `--clean` to `build-script`.
+
+When a new version of Xcode is released, you can update your build without
+recompiling the entire project by passing `--reconfigure` to `build-script`.
+
+## Learning More
+
+Be sure to look at the [documentation index](/docs/README.md) for a bird's eye
+view of the available documentation. In particular, the documents titled
+[Debugging the Swift Compiler](docs/DebuggingTheCompiler.md) and
+[Continuous Integration for Swift](docs/ContinuousIntegration.md) are very
+helpful to understand before submitting your first PR.
